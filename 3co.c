@@ -5,7 +5,7 @@ int check(int array[],int arrSize){
 	int odds=0;
 	for(int i=0;i<arrSize;i++){
 		if(array[i] % 2 != 0){
-			odds += 1;
+			odds++;
 			if(odds == 3){
 				printf("{%d,%d,%d} are 3 consecutive odd numbers\n",array[i-2],array[i-1],array[i]);
 				break;
