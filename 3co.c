@@ -7,7 +7,7 @@ int check(int array[],int arrSize){
 		if(array[i] % 2 != 0){
 			odds += 1;
 			if(odds == 3){
-				return 1;
+				printf("{%d,%d,%d} are 3 consecutive odd numbers\n",array[i-2],array[i-1],array[i]);
 				break;
 			}
 		}
@@ -16,14 +16,14 @@ int check(int array[],int arrSize){
 				odds = 0;
 			}
 			else{
-				return 0;
+				printf("there are no 3 consecutive odd numbers\n");
 			}
 		}
 	}
 }
 
 void main(){
-	int arr[] = {3,4,5,4834173,113143};
+	int arr[] = /*put your array here */;
 	size_t size = sizeof(arr)/sizeof(arr[0]);
-	printf("%d\n",check(arr,size));
+	check(arr,size);
 }
