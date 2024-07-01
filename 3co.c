@@ -12,12 +12,7 @@ int check(int array[],int arrSize){
 			}
 		}
 		else{
-			if(i!=arrSize){
-				odds = 0;
-			}
-			else{
-				printf("there are no 3 consecutive odd numbers\n");
-			}
+			odds = 0;
 		}
 	}
 }
